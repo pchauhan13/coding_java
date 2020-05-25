@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class Program3 {
+public class Program_3 {
     public static void main(String[] args)
     {
         Date now = new Date();

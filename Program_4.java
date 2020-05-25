@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Program4 {
+public class Program_4 {
     public static void main(String[] args) {
         // primitive types
         byte x = 1;

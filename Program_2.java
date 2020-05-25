@@ -1,4 +1,4 @@
-public class Program2 {
+public class Program_2 {
     public static void main(String[] args)
     {
         int age = 30;
