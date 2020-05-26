@@ -7,5 +7,7 @@ public class Program_8 {
         System.out.println("Please enter an integer");
         int i = scanner.nextInt();
         System.out.println(i);
+
+        scanner.close();
     }
 }
