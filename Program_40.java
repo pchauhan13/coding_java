@@ -1,4 +1,4 @@
-abstract class AbstractUser
+abstract class AbstractUser implements Talk
 {
     public String name;
 

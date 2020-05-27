@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class NewUser {
+class NewUser implements Talk {
     private String firstName;
     private String lastName;
     private boolean isVerified = false;
