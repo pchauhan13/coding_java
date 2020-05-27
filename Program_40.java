@@ -2,10 +2,7 @@ abstract class AbstractUser
 {
     public String name;
 
-    public void sayHello()
-    {
-        System.out.println("Hi, I'm a user. My name is " + name);
-    }
+    public abstract void sayHello();
 }
 
 class AbstractStudent extends AbstractUser
@@ -15,13 +12,15 @@ class AbstractStudent extends AbstractUser
     @Override
     public void sayHello()
     {
-        super.sayHello();
+        // super.sayHello();
         System.out.println("My major is " + major);
     }
 }
 
 public class Program_40 {
     public static void main(String[] args) {
-        
+        AbstractStudent as = new AbstractStudent();
+        as.major = "Mustache design";
+        as.sayHello();
     }
 }
