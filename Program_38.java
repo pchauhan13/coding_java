@@ -6,6 +6,17 @@ class NewUser {
     private String lastName;
     private boolean isVerified = false;
 
+    public NewUser()
+    {
+        System.out.println("Creating a User...");
+    }
+
+    public NewUser(String fn, String ln)
+    {
+        firstName = fn;
+        lastName = ln;
+    }
+
     public boolean isVerified()
     {
         return isVerified;

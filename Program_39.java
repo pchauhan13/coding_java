@@ -7,8 +7,7 @@ class Student extends NewUser
 
     public Student(String fn, String ln)
     {
-        setFirstName(fn);
-        setLastName(ln);
+        super(fn, ln);
     }
 
     private boolean isVerified = true;
