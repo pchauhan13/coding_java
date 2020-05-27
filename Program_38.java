@@ -9,6 +9,11 @@ class NewUser {
             System.out.println(firstName + " " + lastName);
         }
     }
+
+    public String message()
+    {
+        return firstName + " " + lastName;
+    }
 }
 
 public class Program_38 {
@@ -18,5 +23,6 @@ public class Program_38 {
         user.lastName = "Scriber";
         // System.out.println(user.firstName);
         user.output(5);
+        System.out.println(user.message());
     }
 }
