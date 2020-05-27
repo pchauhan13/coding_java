@@ -62,6 +62,23 @@ class NewUser {
             System.out.println(user.message());
         }
     }
+
+    public static int searchList (List<NewUser> users, String fn, String ln)
+    {
+        return searchList(users, fn + " " + ln);
+    }
+
+    public static int searchList (List<NewUser> users, String fullName)
+    {
+        for (int i = 0; i < users.size(); i++)
+        {
+            if (users.get(i).message() == fullName)
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
 }
 
 public class Program_38 {
