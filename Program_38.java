@@ -79,6 +79,12 @@ class NewUser {
         }
         return -1;
     }
+
+    @Override
+    public String toString()
+    {
+        return "User [message() = " + message() + "]";
+    }
 }
 
 public class Program_38 {
@@ -109,5 +115,6 @@ public class Program_38 {
         NewUser.printUsers(users);
 
         user.output(true);
+        System.out.println(user.toString());
     }
 }
