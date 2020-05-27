@@ -2,9 +2,12 @@ class NewUser {
     public String firstName;
     public String lastName;
 
-    public void output()
+    public void output(int times)
     {
-        System.out.println(firstName + " " + lastName);
+        for (int i = 0; i < times; i++)
+        {
+            System.out.println(firstName + " " + lastName);
+        }
     }
 }
 
@@ -14,6 +17,6 @@ public class Program_38 {
         user.firstName = "Sub";
         user.lastName = "Scriber";
         // System.out.println(user.firstName);
-        user.output();
+        user.output(5);
     }
 }
