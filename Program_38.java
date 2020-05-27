@@ -33,6 +33,18 @@ class NewUser {
         }
     }
 
+    public void output (boolean nice)
+    {
+        if (nice)
+        {
+            System.out.println("You are a beautiful person - " + firstName + " " + lastName);
+        }
+        else
+        {
+            System.out.println("You are a freak - " + firstName + " " + lastName);
+        }
+    }
+
     public String message()
     {
         return firstName + " " + lastName;
@@ -78,5 +90,7 @@ public class Program_38 {
         NewUser.printUser(anotherUser);
 
         NewUser.printUsers(users);
+
+        user.output(true);
     }
 }
