@@ -4,6 +4,12 @@ import java.util.List;
 class NewUser {
     private String firstName;
     private String lastName;
+    private boolean isVerified = false;
+
+    public boolean isVerified()
+    {
+        return isVerified;
+    }
 
     public String getFirstName()
     {
@@ -126,6 +132,11 @@ class NewUser {
             return false;
         }
         return true;
+    }
+
+    public void sayHello ()
+    {
+        System.out.println("Hi! I'm a user. My name is " + message());
     }
 }
 
