@@ -3,6 +3,11 @@ abstract class AbstractUser implements Talk
     public String name;
 
     public abstract void sayHello();
+
+    public final void sayHello2()
+    {
+        System.out.println("This is final. You cannot change this in derived class");
+    }
 }
 
 class AbstractStudent extends AbstractUser

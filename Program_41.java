@@ -1,6 +1,7 @@
 interface Talk
 {
     void sayHello();
+    void sayHello2();
 }
 
 public class Program_41 {

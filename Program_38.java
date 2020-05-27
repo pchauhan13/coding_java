@@ -17,6 +17,11 @@ class NewUser implements Talk {
         lastName = ln;
     }
 
+    public final void sayHello2()
+    {
+        System.out.println("This is final. You cannot change this in derived class");
+    }
+
     public boolean isVerified()
     {
         return isVerified;
