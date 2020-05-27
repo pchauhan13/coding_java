@@ -37,6 +37,19 @@ class NewUser {
     {
         return firstName + " " + lastName;
     }
+
+    public static void printUser(NewUser user)
+    {
+        System.out.println(user.message());
+    }
+
+    public static void printUsers(List<NewUser> users)
+    {
+        for (NewUser user : users)
+        {
+            System.out.println(user.message());
+        }
+    }
 }
 
 public class Program_38 {
@@ -60,5 +73,10 @@ public class Program_38 {
         {
             System.out.println(user2.message());
         }
+
+        NewUser.printUser(user);
+        NewUser.printUser(anotherUser);
+
+        NewUser.printUsers(users);
     }
 }
