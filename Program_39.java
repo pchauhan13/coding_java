@@ -5,6 +5,12 @@ class Student extends NewUser
         System.out.println("Creating a student...");
     }
 
+    public Student(String fn, String ln)
+    {
+        setFirstName(fn);
+        setLastName(ln);
+    }
+
     private boolean isVerified = true;
     private String major;
 
