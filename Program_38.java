@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class NewUser {
     private String firstName;
     private String lastName;
@@ -44,5 +47,18 @@ public class Program_38 {
         // System.out.println(user.firstName);
         user.output(5);
         System.out.println(user.message());
+
+        NewUser anotherUser = new NewUser();
+        anotherUser.setFirstName("Prashant");
+        anotherUser.setLastName("Singh");
+
+        List<NewUser> users = new ArrayList<NewUser>();
+        users.add(user);
+        users.add(anotherUser);
+
+        for (NewUser user2 : users)
+        {
+            System.out.println(user2.message());
+        }
     }
 }
