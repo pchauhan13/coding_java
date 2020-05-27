@@ -1,6 +1,26 @@
 class NewUser {
-    public String firstName;
-    public String lastName;
+    private String firstName;
+    private String lastName;
+
+    public String getFirstName()
+    {
+        return firstName;
+    }
+
+    public void setFirstName(String value)
+    {
+        firstName = value;
+    }
+
+    public String getLastName()
+    {
+        return lastName;
+    }
+
+    public void setLastName(String value)
+    {
+        lastName = value;
+    }
 
     public void output(int times)
     {
@@ -19,8 +39,8 @@ class NewUser {
 public class Program_38 {
     public static void main(String[] args) {
         NewUser user = new NewUser();
-        user.firstName = "Sub";
-        user.lastName = "Scriber";
+        user.setFirstName("Sub");
+        user.setLastName("Scriber");
         // System.out.println(user.firstName);
         user.output(5);
         System.out.println(user.message());
