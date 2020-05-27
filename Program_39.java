@@ -1,5 +1,10 @@
 class Student extends NewUser
 {
+    public Student()
+    {
+        System.out.println("Creating a student...");
+    }
+
     private boolean isVerified = true;
     private String major;
 
