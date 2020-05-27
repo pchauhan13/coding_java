@@ -101,7 +101,7 @@ class NewUser {
         {
             return false;
         }
-        User other = (User) obj;
+        NewUser other = (NewUser) obj;
         if (firstName == null)
         {
             if (other.firstName != null)
